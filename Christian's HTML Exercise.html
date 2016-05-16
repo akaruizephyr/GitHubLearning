@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Christian's Beta test</title>
+	<style type:"text/css"> 						           				
+															/*css internal*/    /*kalo inline itu di html nya, mis:<h1 style> dll, kalo eksternal yang bikin baru filenya*/
+	h1{														/*kalo gini defaultnya css, ato bs jg style type="text/css"*/
+		color:white;
+		background-color:#000000;
+		font-size:60px;
+		text-align:center;
+	}
+	
+	b{	
+															/*script ga bisa pake style, instead, kita ganti text nya dengan tag "b"*/
+		color: black;
+		background-color:white;
+		font-size:24px;
+		text-align:justify;
+	}
+	
+	li{
+		color:black;
+		background-color:yellow;
+	}
+	
+	#menu ol li
+	{
+		display:none;                           /*setiap di menu yang ada li dan li nya ada ul, dia akan lakukan ini*/
+	}
+	
+	#menu ol:hover li				/*kalo div harus pake #, name hrs pake ,*/
+	{								/*buat jadi ketika dihover keluar bbrp menu lagi*/
+		display:block;
+		position:auto;
+	}
+</style>
+</head>
+
+<body>
+
+	<h1>TITLE BAR</h1>
+
+	<script>												<!--script ini kyknya javascript deh-->											
+		document.write("<b>TABLE EXERCISE</b>");            <!--document write ini sama aja kayak printf-->	
+	</script>
+	
+	<table width="100%"; height="50"; bgcolor="#000000"; border="2";>		<!--tr = tablerow , td=table down, width 100% ngikutin lebar komp lu-->
+		<tr width="800"; height="50"; bgcolor="#000000">
+			<td><font color="#ffffff" size="5";> SONG PLAYLISTS </font></td>
+		</tr>
+		
+		<tr width="250"; height="100"; bgcolor="#666666">
+			<td>
+				<div id="menu">												<!--div itu untuk nentuin area aja-->
+					<ol><font color="#ffffff";>JAPANESE<font>
+						<br />
+							<li>Find the Blue</li>
+							<li>Fly to the sky</li>
+							<li>Kimi no shiranai monogatari</li>
+							<li>Believe</li>						
+						</ol>
+						
+					<ol><font color="#ffffff";>INDONESIAN<font>
+						<br />
+							<li>Waktu Takkan Mampu</li>
+							<li>Dear My Friend</li>
+						
+						</ol>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+
+
+</html>
